@@ -1,4 +1,4 @@
-import Chai from './chai.jsx'
+import Chai from './Chai.jsx'
 
 const username = "code with aditya"
 function App() {

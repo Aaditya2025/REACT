@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react'      //To use any Hook we have to import first. 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -28,13 +28,13 @@ function App() {
   return (
     <>
     <h1>Chai aur React</h1>
-    <h2>Counter Value: {counter}</h2>
+    <h2>Counter Value: {counter}</h2>  
     <button
-    onClick={addValue}
+    onClick={addValue}     //Yaha pe click hone pe hi addValue function call hoga. 
     >Add Value</button>
     <br/>
     <button
-    onClick={removeValue}
+    onClick={removeValue}    //Use of variable in curly braces is called evaluated expression, we never write whole js code only we have to write the evaluated code of javascript which will be store in a curly braces.
     >Remove Value</button>
     </>
   )
