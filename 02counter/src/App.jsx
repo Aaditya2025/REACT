@@ -12,7 +12,7 @@ function App() {
 
 
   const addValue = () =>{
-    if(counter < 20 && counter >= 0){
+    if(counter <20  & counter >= 0)
       setcounter(counter+1)
       // setcounter(prevCounter => prevCounter+1)
       // setcounter(prevCounter => prevCounter+1)
@@ -20,7 +20,7 @@ function App() {
       // setcounter(prevCounter => prevCounter+1)
     }
     console.log('value added', counter);
-  }
+  
 
   const removeValue =  () =>{
     if(counter < 21 && counter > 0){
@@ -29,6 +29,7 @@ function App() {
     }
     console.log('value removed', counter)
   }
+
   return (
     <>
     <h1>Chai aur React</h1>
@@ -42,6 +43,6 @@ function App() {
     >Remove Value</button>
     </>
   )
-}
 
+}
 export default App
