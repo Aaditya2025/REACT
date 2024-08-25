@@ -21,6 +21,14 @@ Fiber:  [Fiber documentry](https://github.com/acdlite/react-fiber-architecture)
 ⭕Why it's useful: Fiber enables React to manage high-priority tasks (like user inputs) without delay, ensuring a smoother user experience even as the app grows in complexity.
 In summary, the Virtual DOM helps React update the UI efficiently by minimizing changes to the real DOM, while Fiber ensures these updates are managed in a way that keeps the app responsive, even under heavy load.
 
+PROPS: It makes component reusable. It is argument of any component's function and we can use any new object or array in any component. 
+
+⭕If someone forget to provide properties in App.jsx so to overcome that situation we provide the default value in component's function argument which is used when no value provided by the component.
+For Example: 1. function Card({username = "Sigma", btnText = 'Visit me'})
+             2. {btnText || "Visit Me"}: Second method to overcome that situation. 
+
+⭕The props in React are the inputs to a component of React. They can be single-valued or objects having a set of values that will be passed to components of React during creation by using a naming convention that almost looks similar to HTML-tag attributes. We can say that props are the data passed from a parent component into a child component.
+
 
 
 
