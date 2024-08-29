@@ -34,7 +34,9 @@ For Example: 1. function Card({username = "Sigma", btnText = 'Visit me'})
 ### HOOKS: It is a special type of functions which provide a state and "statefunction" i.e., used to update the state. 
 
 1. useState: Syntax: 'const[state, stateFunction] = useState()' ; Here state will change by using stateFunction. 
-2. useCallback: 'useCallback(fn, dependencies)': Dependencies is type of array which values are locally stored and used when fn required.
+2. useCallback: 'useCallback(fn, dependencies)': Dependencies is type of array which values are locally stored the dependecies as a cache and used when fn required.
+3. useEffect: Everything is same as the useCallback but it is responsible for the calling fn when any dependencies get changed. 
+4. useRef: This hook is used to make communication between two things in react components, if we want to do something in any html element then we used this hook. For Eg.: In password generater project we use this hook when we want to select the input text for that we pass the reference to the input field and the we run the fn.
 
 
 
