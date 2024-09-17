@@ -38,7 +38,12 @@ For Example: 1. function Card({username = "Sigma", btnText = 'Visit me'})
 3. useEffect: Everything is same as the useCallback but it is responsible for the calling fn when any dependencies get changed. 
 4. useRef: This hook is used to make communication between two things in react components, if we want to do something in any html element then we used this hook. For Eg.: In password generater project we use this hook when we want to select the input text for that we pass the reference to the input field and the we run the fn.
 
-
+###  CONTEXT API: Behind the scene of this topic is called PROP DRILLING  in which passing of props to child component is directly. 
+1. Passing data deeply into the tree
+2. Updating data passed via context
+3. Specifying a fallback default value
+4. Overriding context for a part of the tree
+5. Optimizing re-renders when passing objects and functions 
 
 
 
