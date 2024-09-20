@@ -39,6 +39,7 @@ For Example: 1. function Card({username = "Sigma", btnText = 'Visit me'})
 4. useRef: This hook is used to make communication between two things in react components, if we want to do something in any html element then we used this hook. For Eg.: In password generater project we use this hook when we want to select the input text for that we pass the reference to the input field and the we run the fn.
 
 ###  CONTEXT API: Behind the scene of this topic is called PROP DRILLING  in which passing of props to child component is directly. 
+### The Context API in React helps solve the problem of "prop drilling." Normally, when you need to pass data (props) to a deeply nested component, you have to pass it through every component in between, even if they don't need it. The Context API allows you to share data directly between components without having to pass it manually through each level, making the code cleaner and easier to manage.
 1. Passing data deeply into the tree
 2. Updating data passed via context
 3. Specifying a fallback default value
