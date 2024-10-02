@@ -46,7 +46,31 @@ For Example: 1. function Card({username = "Sigma", btnText = 'Visit me'})
 4. Overriding context for a part of the tree
 5. Optimizing re-renders when passing objects and functions 
 
+### REDUX TOOLKIT: It helps manage the global state of your application in a predictable way. For small applications, React's Context API may suffice, but for larger apps with complex state, Redux shines.
+
+### Core Concepts of Redux:
+### Store: A single JavaScript object that holds the application state. In argument most of the time it takes object only. 
+### Syntax: 
+⭕import {configureStore} from '@reduxjs/toolkit'
+⭕export const store = configureStore({
+    reducer: todoReducer
+   })
 
 
+Actions: Objects that tell the Redux store how to update the state.
+
+Reducers: Functions that specify how the state changes in response to an action. It include property and function. Inside function we have always two thing first is state and second is Actions. 
 
 
+### Dispatch: Ye Ek Reducer ko use karke store ke andar value me changes karata hai. The function used to send actions to the store.  
+SYNTAX: const addTodoHandler = (e) => { 
+        e.preventDefault()
+        dispatch(addTodo(input))
+        setInput("")
+    }
+
+### SUMMARY: 
+1. REDUX is core library and React-Redux is a implementation of REDUX and it is wiring of React and Redux which helps React to communicate with Redux core library. 
+2. Redux Toolkit is a tool which provide all these behid the work of React-Redux in the form of methods.
+3. Starting of Redux Toolkit is from creating a store in general one application have only one store which is called Single Source of Truth.
+4. Provide all Reducer to our store. 
